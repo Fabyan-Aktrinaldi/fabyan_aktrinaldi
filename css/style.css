@@ -39,9 +39,16 @@ body {
 
 .header-inner {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+}
+
+.header-foto {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .brand {
@@ -229,8 +236,11 @@ body {
 /* PROJECTS */
 .projects-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
   margin-top: 30px;
+  /* gap: 25px;
+  margin-top: 30px; */
 }
 
 .project {
