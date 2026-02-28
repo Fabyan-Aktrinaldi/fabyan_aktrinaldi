@@ -1,161 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meriflux</title>
-
-	<!-- Font,ambil digoogle tulis google font lalu select dan salin famillies -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
-
-<!-- Feather Icon, masuk ke web feather icon klik get strated scroll ke bawah salin code ini, dan salin script bagian bawah dekat body -->
-<script src="https://unpkg.com/feather-icons"></script>
-
-
-	<!-- Link ini ke file css, caranya yaitu klik new lalu  tulis css dan klik new lagi baru tambahkan style.css -->
-	<link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portofolio — Nazlan Nur Hidayat</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabyan Aktrinaldi | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#home">Nazlan<span>.</span></a>
-        <nav class="nav" id="nav">
-          <a href="#home">Beranda</a>
-          <a href="#about">Tentang</a>
-          <a href="#skills">Keahlian</a>
-          <a href="#projects">Proyek</a>
-          <a href="#contact">Kontak</a>
-        </nav>
-        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- <a href="#home" class="brand">Fabyan<span>.</span></a> -->
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle">
+      <i data-feather="menu"></i>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Fabyan Aktrinaldi</h1>
+      <p class="lead">Computer Science Student </p>
+      <p class="lead">Universitas Halu Oleo</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
       </div>
-    </header>
+    </div>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <h1>Nazlan Nur Hidayat</h1>
-            <p class="lead">Frontend Developer & UI Enthusiast — membuat antarmuka yang sederhana, cepat, dan ramah pengguna.</p>
-            <p class="meta">Berdomisili di Indonesia · terbuka untuk kolaborasi</p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn primary">Lihat Proyek</a>
-              <a href="#contact" class="btn">Hubungi</a>
-            </div>
-          </div>
-          <div class="hero-photo">
-            <img src="img/profile.jpg" alt="Nazlan Nur Hidayat" onerror="this.src='img/Picture3s.png'">
-          </div>
-        </div>
-      </section>
+    <div class="hero-photo">
+      <img src="img/fotogw.png" alt="Fabyan" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
 
-      <section id="about" class="section about">
-        <div class="container">
-          <h2>Tentang <span>Nazlan</span></h2>
-          <div class="about-grid">
-            <div>
-              <p>Saya Nazlan Nur Hidayat, seorang pengembang antarmuka pengguna yang tertarik pada pengalaman pengguna dan desain visual. Saya berfokus pada pembuatan aplikasi web responsif menggunakan HTML, CSS, dan JavaScript.</p>
-              <ul class="about-list">
-                <li><strong>Pengalaman:</strong> Proyek freelance & tugas kampus</li>
-                <li><strong>Email:</strong> nazlan@example.com</li>
-                <li><strong>Lokasi:</strong> Indonesia</li>
-              </ul>
-            </div>
-            <div class="skills-summary">
-              <h3>Keahlian Utama</h3>
-              <div class="skills">
-                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React (Dasar)</span><span>Figma</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2>About <span>Me</span></h2>
+    <p class="section-text">
+      Halo, saya mahasiswa S1 Ilmu Komputer yang fokus mengembangkan kemampuan 
+      saya dalam bidang teknologi informasi. Saya adalah seorang pemula yang 
+      memiliki minat yang kuat dalam pemrograman, terutama dalam bahasa C++ dan Python. 
+      Saya juga memiliki pengalaman dalam pengelolaan database menggunakan MySQL.
+    </p>
+  </div>
+</section>
 
-      <section id="skills" class="section skills">
-        <div class="container">
-          <h2>Keahlian <span>Teknis</span></h2>
-          <div class="skill-grid">
-            <div class="skill-card">
-              <h4>Frontend</h4>
-              <p>HTML, CSS, Responsive Design, Accessibility</p>
-            </div>
-            <div class="skill-card">
-              <h4>Interaktif</h4>
-              <p>Vanilla JS, DOM, API Integration</p>
-            </div>
-            <div class="skill-card">
-              <h4>Design</h4>
-              <p>UI Prototyping, Figma, Visual Design</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<!-- SKILLS -->
+<section class="section light" id="skills">
+  <div class="container">
+    <h2>Technical <span>Skills</span></h2>
 
-      <section id="projects" class="section projects">
-        <div class="container">
-          <h2>Proyek <span>Terpilih</span></h2>
-          <div class="projects-grid">
-            <article class="project">
-              <img src="img/Picture3s.png" alt="Project 1">
-              <h3>Situs Portofolio</h3>
-              <p>Portofolio pribadi yang responsif dengan fokus pada performa dan aksesibilitas.</p>
-            </article>
-            <article class="project">
-              <img src="img/PosterMeriflux1.jpg" alt="Project 2">
-              <h3>Landing Page Event</h3>
-              <p>Desain landing page untuk pameran seni dengan tata letak modern.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+    <div class="skill-grid">
 
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2>Kontak <span>Langsung</span></h2>
-          <p>Ingin bekerja sama atau berdiskusi? Kirim pesan singkat.</p>
-          <a href="mailto:nazlan@example.com" class="btn primary">Kirim Email</a>
-          <div class="contact-meta">
-            <div><i data-feather="mail"></i> nazlan@example.com</div>
-            <div><i data-feather="phone"></i> +62 821-XXX-XXXX</div>
-            <div><i data-feather="linkedin"></i> linkedin.com/in/nazlan</div>
-          </div>
+      <div class="skill-card">
+        <div class="skill-title">
+          <img src="img/c++.png" alt="C++ Icon">
+          <h4>C++</h4>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2026 Nazlan Nur Hidayat — Dibuat dengan ♥</p>
-        <div class="social">
-          <a href="#"><i data-feather="github"></i></a>
-          <a href="#"><i data-feather="twitter"></i></a>
-        </div>
+        <!-- <p>Struktur data, algoritma, dan logika pemrograman.</p> -->
       </div>
-    </footer>
 
-    <script>
-      feather.replace();
-      const nav = document.getElementById('nav');
-      const toggle = document.getElementById('nav-toggle');
-      toggle.addEventListener('click', () => nav.classList.toggle('open'));
-    </script>
-    <script src="js/script.js"></script>
-  </body>
+      <div class="skill-card">
+         <div class="skill-title">
+          <img src="img/python.png" alt="Python Icon">
+          <h4>Python</h4>
+        </div>
+        <!-- <p>Data processing & machine learning dasar.</p> -->
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-title">
+          <img src="img/MySQL2.png" alt="MySQL Icon">
+          <h4>MySQL</h4>
+        </div>
+        <!-- <p>Database design & query optimization.</p> -->
+      </div>
+<!-- 
+      <div class="skill-card">
+        <h4>Backend Development</h4>
+        <p>API & sistem logic development.</p>
+      </div>
+
+      <div class="skill-card">
+        <h4>Frontend Development</h4>
+        <p>Responsive & modern UI implementation.</p>
+      </div> 
+-->
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2>Selected <span>Projects</span></h2>
+
+    <div class="projects-grid">
+      <article class="project">
+        <h3>Sistem Manajemen Data Mahasiswa</h3>
+        <p>Aplikasi C++ berbasis struktur data untuk mengelola data mahasiswa secara efisien.</p>
+      </article>
+
+      <article class="project">
+        <h3>Website Portfolio</h3>
+        <p>Website responsive minimalis menggunakan HTML & CSS.</p>
+      </article>
+
+      <article class="project">
+        <h3>Data Analysis with Python</h3>
+        <p>Analisis dataset sederhana menggunakan Python dan visualisasi data.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section light" id="contact">
+  <div class="container contact">
+    <h2>Contact <span>Me</span></h2>
+    <p>Terbuka untuk kolaborasi dan diskusi teknologi.</p>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <i data-feather="mail"></i>
+        <span>fabyanaktrinaldi111@email.com</span>
+      </div>
+
+      <div class="contact-item">
+        <i data-feather="github"></i>
+        <span><a href="https://github.com/Fabyan-Aktrinaldi">github.com/Fabyan-Aktrinaldi</a></span>
+      </div>
+    
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Fabyan Aktrinaldi</p>
+  </div>
+</footer>
+
+<script>
+  feather.replace();
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
+
+</body>
 </html>
 
