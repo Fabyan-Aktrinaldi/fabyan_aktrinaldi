@@ -38,10 +38,10 @@ body {
 }
 
 .header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+  display:flex;
+  align-items:center;
+  gap:30px;
+  padding: 15px 0;
 }
 
 .header-foto {
@@ -49,6 +49,13 @@ body {
   height: 25px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  /* margin-left: auto; */
 }
 
 .brand {
@@ -63,8 +70,10 @@ body {
 }
 
 .nav {
-  display: flex;
-  gap: 24px;
+  display:flex;
+  gap:22px;
+  align-items:center;
+  margin-left:auto;
 }
 
 .nav a {
@@ -313,24 +322,107 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: var(--radius);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+@media (max-width:768px){
+
+  .nav{
+    display:none;
   }
 
-  .nav.open {
-    display: flex;
+   .header-inner{
+    justify-content: space-between;
   }
 
-  .nav-toggle {
-    display: block;
+  .nav.open{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:20px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
   }
+
+  .nav-toggle{
+    display:block;
+  }
+
 }
+
+/* ===================== */
+/* DARK MODE */
+/* ===================== */
+
+body.dark-mode {
+  --primary: #60a5fa;
+  --primary-soft: rgba(96,165,250,0.15);
+  --text-dark: #f1f5f9;
+  --text-muted: #94a3b8;
+  --bg: linear-gradient(135deg,#0f172a,#1e293b);
+  --bg-soft: rgba(255,255,255,0.05);
+}
+
+/* Glass header */
+body.dark-mode .site-header {
+  background: rgba(15,23,42,0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Glass card effect */
+body.dark-mode .skill-card,
+body.dark-mode .project {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Footer dark */
+body.dark-mode .site-footer {
+  background: rgba(15,23,42,0.9);
+}
+
+/* Contact hover */
+body.dark-mode .contact-item:hover {
+  background: rgba(96,165,250,0.1);
+}
+
+/* ===================== */
+/* DARK MODE TOGGLE */
+/* ===================== */
+
+.theme-toggle {
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  background: #e2e8f0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  margin-left: 15px;
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.3s;
+}
+
+/* active */
+body.dark-mode .theme-toggle {
+  background: #334155;
+}
+
+body.dark-mode .toggle-circle {
+  transform: translateX(22px);
+  background: #60a5fa;
+}
+
